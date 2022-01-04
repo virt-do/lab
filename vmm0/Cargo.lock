@@ -35,20 +35,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "dd8f7255a17a627354f321ef0055d63b898c6fb27eff628af4d1b66b7331edf6"
 
 [[package]]
-name = "vmm"
-version = "0.1.0"
-dependencies = [
- "kvm-bindings",
- "kvm-ioctls",
- "libc",
-]
-
-[[package]]
 name = "vmm-sys-util"
 version = "0.9.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "733537bded03aaa93543f785ae997727b30d1d9f4a03b7861d23290474242e11"
 dependencies = [
  "bitflags",
+ "libc",
+]
+
+[[package]]
+name = "vmm0"
+version = "0.1.0"
+dependencies = [
+ "kvm-bindings",
+ "kvm-ioctls",
  "libc",
 ]
