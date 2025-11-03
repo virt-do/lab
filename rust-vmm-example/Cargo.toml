@@ -1,0 +1,9 @@
+[package]
+name = "rust-vmm-example"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+kvm-bindings = "0.14.0"
+kvm-ioctls = "0.24.0"
+libc = "0.2.177"
