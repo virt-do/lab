@@ -8,6 +8,6 @@ then
 fi
 
 pushd $LINUX_REPO
-cp ../linux-config-x86_64 .config
-KCFLAGS="-Wa,-mx86-used-note=no" make bzImage -j `nproc`
+make ch_defconfig
+KCFLAGS="-Wa,-mx86-used-note=no" KCPPFLAGS=-std=gnu17 make bzImage -j `nproc`
 popd
